@@ -29,7 +29,7 @@ Avant de commencer, assurez-vous d'avoir installé les outils suivants :
 - [Composer](https://getcomposer.org/) (pour installer les dépendances PHP)
 - [Node.js et npm](https://nodejs.org/) (pour installer les dépendances JavaScript)
 
-## 🚀 Installation
+## Installation
 
 ### 1. Cloner le projet
 
@@ -37,7 +37,7 @@ Clonez ce repository dans votre machine locale.
 
 ```bash
 git clone https://bitbucket.org/brybry_lvx/lorcana.git
-cd lorcana
+cd lorcana_api
 
 # Installer les dépendances PHP
 composer install
@@ -50,3 +50,5 @@ sail up -d
 sail artisan migrate
 sail artisan db:seed
 
+#Tester les endpoints
+Allez sur Insomnia ou sur Potsman pour tester les endpoints

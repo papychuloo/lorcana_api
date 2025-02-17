@@ -25,8 +25,10 @@ Route::post('/me/{id}/update-owned', [CardController::class, 'updateCards']);
 
 //route api pour la wishlist
 Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/wishlist/add', [WishlistController::class, 'add']);
-    Route::post('/wishlist/remove', [WishlistController::class, 'remove']);
-    Route::get('/wishlist', [WishlistController::class, 'list']);
+    Route::post('/wishlist/add', [WishlistController::class, 'add']);  // Ajoute une carte à la wishlist
+    Route::post('/wishlist/remove/{id}', [WishlistController::class, 'remove']);  // Retirer une carte de la wishlist
+    Route::get('/wishlist', [WishlistController::class, 'list']);  // Liste des éléments de la wishlist
 });
+
+
 
